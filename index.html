@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#c85524" />
+    <meta
+      name="description"
+      content="Demo de portfólio do Auxilium. Uma experiência fictícia para conectar doações e novos começos."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <title>Auxilium · Doações que conectam</title>
+    <link rel="icon" href="assets/logo-original.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <div class="demo-banner">
+      <span class="status-dot"></span> Demo de portfólio
+      <span class="banner-divider">•</span> Dados fictícios. Nenhuma doação
+      real.
+    </div>
+    <header class="header">
+      <a class="brand" href="#/explorar" aria-label="Auxilium — explorar"
+        ><span class="brand-mark"
+          ><img src="assets/logo-original.png" alt="" /></span
+        ><span
+          >auxilium<span class="brand-sub">DOAÇÕES QUE CONECTAM</span></span
+        ></a
+      >
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#/explorar" data-nav="explorar">Explorar</a
+        ><a href="#/atividade" data-nav="atividade">Minha atividade</a
+        ><a href="#/como-funciona" data-nav="como-funciona">Como funciona</a>
+      </nav>
+      <button class="btn primary header-cta" data-action="create">
+        <span aria-hidden="true">＋</span> Doar um item
+      </button>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer">
+      <a class="footer-brand" href="#/explorar"
+        >auxilium<span aria-hidden="true">♥</span></a
+      >
+      <p>Pequenos gestos. Novos começos.</p>
+      <span>Experiência demonstrativa · 2026</span>
+    </footer>
+    <nav class="mobile-nav" aria-label="Navegação no celular">
+      <a href="#/explorar" data-nav="explorar"
+        ><span aria-hidden="true">⌕</span>Explorar</a
+      ><a href="#/atividade" data-nav="atividade"
+        ><span aria-hidden="true">♡</span>Atividade</a
+      ><button data-action="create">
+        <span aria-hidden="true">＋</span>Doar</button
+      ><a href="#/como-funciona" data-nav="como-funciona"
+        ><span aria-hidden="true">ⓘ</span>Como funciona</a
+      >
+    </nav>
+    <dialog id="modal" aria-labelledby="modal-title" tabindex="-1"></dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
